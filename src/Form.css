@@ -1,4 +1,20 @@
 input{
-  padding: 15px;
+  padding: 10px;
   margin: 10px 0;
+  border: 1px solid #7fffd4;
+  border-radius: 5px;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: rgb(233, 6, 6);
+  display: none;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
 }
